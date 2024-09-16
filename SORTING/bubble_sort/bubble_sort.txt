@@ -1,0 +1,63 @@
+Bubble Sort Works Like this:
+
+* Pushes the maximum element to the last
+*by adjacent swaps.
+
+What is adjacent swaps ?
+* It compares between the element which is current 
+beside . It doesn't compare with the whole element.
+It just compare with the element adjacent or next to
+it.
+
+Now suppose we have elements like this :
+
+        13, 46, 24, 52, 20, 9
+
+Step 1: It will check which is the larger betn 
+        13, 46 obviously it is 46. So it will remain
+as it is.
+
+Step 2: It will check which is the larger betn 
+        46, 24 obviously it is 46. So it will swap
+the number and keep the rest as it is:
+
+        13, 24, 46 , 52, 20, 9
+
+Step 3: Now It will check which is the larger betn 
+        46, 52 obviously it is 52. So it will remain
+as it is.
+
+Step 4: Now It will check which is the larger betn 
+        52, 20 obviously it is 52. So it will swap
+the number and keep the rest as it is:
+
+        13, 24, 46 , 20, 52, 9
+
+Step 5: Now It will check which is the larger betn 
+        52, 9 obviously it is 52. So it will swap
+the number and keep the rest as it is:
+
+        13, 24, 46 , 20, 9, 52
+
+Now we can say 52 is at the place where its supposed
+to be. Now we have to check numbers before 52.
+
+Step 6: Start all over again . and continue till the
+sorted number . in this case 52.
+
+Step 6: It will check which is the larger betn 
+        13, 24 obviously it is 24.So it will remain
+as it is. 
+
+Step 7: It will check which is the larger betn 
+        24, 46 obviously it is 46. So it will swap
+the number and keep the rest as it is:
+
+        13, 46, 24, 20, 9, 52
+
+        It will continue it every part is sorted.
+
+At the end we will get :
+
+        9, 13, 20, 24, 46, 52
+

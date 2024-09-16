@@ -1,0 +1,80 @@
+
+******* Quick Sorting *******
+
+        Time Complexity : O(nlogn)
+        spcae Complexity : O(1)
+    
+*No temporary arrray needed for quick sort.
+So its slightly better than merge sort.
+
+*Steps :
+
+1)    pick a pivot and place it in its correct place 
+    in the sorted array.
+
+    Pivot : Any element. It can be last , first or any random number.
+
+2) Smaller on the left and large on the right
+
+    For example : 
+    I have : 4 6 2 5 7 9 1 3
+
+    I pick pivot 4.
+
+    now everything that is smaller than the pivot will go
+    to the left and anything larger will go to the right.
+
+Starting from the begining :
+
+    2 1 3 4 6 5 7 9
+      ^   ^    ^
+        pivot
+    Smaller  Larger
+
+*After 1 iteration , We can say that at least 1 element is sorted
+
+3) repeat these steps.
+
+4) low the left & right elements is an individual array
+
+5) Now we pick another pivot from left and right and repeat again
+
+Repeat all this till an array has only 1 element.
+
+            *Explanation of Quick Sort
+
+WE will create a low and high pointer .
+
+1) pivot = arr[low]
+
+2) i pointer placed at right most part. 
+    j  pointer placed at left most part.
+
+3) i will stop at whenever it find an element larger than
+   pivot. 
+
+   then j will stop at whenever it find an element smaller than
+   pivot. 
+
+   and then it will swap the arr[i] and arr[j] elements
+
+4) Again come back at i and j repeat
+
+5) I will continue till i or j reaches each others territory.
+
+6) if it reaches then we can say that the left of the pivot is all the smaller
+elements and to the right is all the larger elements
+
+7) and then we will swap the arr[pivot] with the index i and j crossed.
+
+8) now the arrr[pivot] is the known as the partition of smaller and larger elements
+
+9) now we will pass (low, partition - 1) and (high, partition + 1)
+                            ^                          ^
+                for smaller elements arr    for larger elements arr
+
+
+
+
+
+******* Quick Sorting *******

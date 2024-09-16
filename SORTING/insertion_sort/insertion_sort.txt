@@ -1,0 +1,36 @@
+Takes an element and places in its correct position.
+
+It takes piece by piece elements and compares with others
+
+for example :
+
+        14 9 15 12 6 8 13
+
+it will take the first element and compare betn 9, 
+if j > j-1 then swap.
+
+        14 9
+
+        9 14
+
+then it will continue till rest .like this :
+
+        9 14 15
+
+then 
+
+        9 14 15 12.
+
+    >   9 14 12 15
+    >   9 12 14 15
+
+then 
+
+        9 12 14 15 6
+    >   9 12 14 6 15
+    >   9 12 6 14 15
+    >   9 6 12 14 15
+    >   6 9 12 14 15
+
+it continues till all element is sorted. 
+In every it allows one element to make a comparison.
